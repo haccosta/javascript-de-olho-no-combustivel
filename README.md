@@ -1,5 +1,5 @@
 # javascript-de-olho-no-combustivel
-Repositorio para o projeto da disciplinha de Framework Web da Especialização Tecnologia Java, na UTFPR
+Repositorio para o projeto da disciplina de Framework Web da Especialização Tecnologia Java, na UTFPR
 
 
 - [x] Criar o repositório no GitHub com a estrutura do Gitflow, ou seja, branches main e develop.
