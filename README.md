@@ -23,6 +23,10 @@ Repositorio para o projeto da disciplina de Framework Web da Especialização Te
 
 
 Protótipo das telas do Sistema:
-Projeto das interfaces gráficas foi desenvolvido na ferrament Figma, dispnonibilizado aqui: [Prototipação da Telas](https://duckduckgo.com)
+Projeto das interfaces gráficas foi desenvolvido na ferramenat Figma, navegável, dispnonibilizado aqui: [Prototipação da Telas](https://www.figma.com/proto/RDAtre2QIB9eHpWgnHI12H/Figma-basics?type=design&node-id=101-78&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=101%3A78&show-proto-sidebar=1)
 
-<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FRDAtre2QIB9eHpWgnHI12H%2FFigma-basics%3Ftype%3Ddesign%26node-id%3D101-78%26scaling%3Dmin-zoom%26page-id%3D0%253A1%26starting-point-node-id%3D101%253A78%26show-proto-sidebar%3D1" allowfullscreen></iframe>
+
+
+
+
+
