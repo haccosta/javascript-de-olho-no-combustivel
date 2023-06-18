@@ -2,16 +2,16 @@
 <section>
   <form [formGroup]="formulario">
     <label>Posto de Gasolina</label>
-    <input type="text" formControlName="postoGasolina" placeholder="Digite o posto de gasolina">
+    <input type="text" formControlName="postoGasolina" placeholder="Informe o posto de gasolina">
     <div class="mensagem__erro" *ngIf="formulario.get('postoGasolina')?.errors && formulario.get('postoGasolina')?.touched">Posto de Gasolina é obrigatório!</div>
     <br /> <br />
     <label>Quilometragem/KM</label>
-    <input type="text" formControlName="quilometragem">
+    <input type="text" formControlName="quilometragem" placeholder="Informe a quilometragem">
     <div class="mensagem__erro" *ngIf="formulario.get('quilometragem')?.errors?.['required'] && formulario.get('quilometragem')?.touched">Quilometragem/km é obrigatoria!</div>
     <div class="mensagem__erro" *ngIf="formulario.get('quilometragem')?.errors?.['minlength'] && formulario.get('quilometragem')?.touched">Quilometragem/km  precisa ter no minimo 1 caracteres!</div>
     <br /> <br />
     <label>Litros Abastecidos/lts</label>
-    <input type="text" formControlName="litrosAbastecidos">
+    <input type="text" formControlName="litrosAbastecidos" placeholder="Informe os litros abastecidos">
     <div class="mensagem__erro" *ngIf="formulario.get('litrosAbastecidos')?.errors && formulario.get('litrosAbastecidos')?.touched">Litros Abastecidos é obrigatório!</div>
     <div class="mensagem__erro" *ngIf="formulario.get('litrosAbastecidos')?.errors?.['minlength'] && formulario.get('litrosAbastecidos')?.touched">Litros Abastecidos precisa ter no minimo 1 caracteres!</div>
     <br /> <br />
