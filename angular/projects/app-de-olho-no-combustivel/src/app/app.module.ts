@@ -12,17 +12,24 @@ import { MatDividerModule } from '@angular/material/divider';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { HeaderComponent } from './components/header/header.component';
-import { FormRegisterComponent } from './components/form-register/form-register.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatTableModule } from '@angular/material/table'
+import {MatRadioModule} from '@angular/material/radio';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import { CriarAbastecimentoComponent } from './components/criar-abastecimento/criar-abastecimento.component';
+import { ListarAbastecimentoComponent } from './components/listar-abastecimento/listar-abastecimento.component';
+import { RegistroAbastecimentoComponent } from './components/registro-abastecimento/registro-abastecimento.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     SidebarComponent,
-    FormRegisterComponent
+    CriarAbastecimentoComponent,
+    ListarAbastecimentoComponent,
+    RegistroAbastecimentoComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +46,10 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     ReactiveFormsModule,
     MatInputModule,
     MatFormFieldModule,
-    MatSelectModule
+    MatSelectModule,
+    MatRadioModule,
+    MatCheckboxModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

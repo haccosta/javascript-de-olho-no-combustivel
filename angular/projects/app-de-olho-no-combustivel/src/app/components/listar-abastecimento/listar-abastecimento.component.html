@@ -1,0 +1,18 @@
+<h1>Lista de Registro de Abastecimento</h1>
+
+<table class="styled-table">
+  <thead>
+      <tr>
+          <th>Posto de Gasolina</th>
+          <th>KM</th>
+          <th>Litros Abastecidos/lts</th>
+          <th>Trocou de Combustivel?</th>
+          <th>Combustivel</th>
+          <th>Já Abasteceu neste Posto?</th>
+          <th>Ações</th>
+      </tr>
+  </thead>
+  <tbody *ngFor="let registroAbastecimento of listaAbastecimento">
+    <tr app-table-row></tr>
+  </tbody>
+</table>

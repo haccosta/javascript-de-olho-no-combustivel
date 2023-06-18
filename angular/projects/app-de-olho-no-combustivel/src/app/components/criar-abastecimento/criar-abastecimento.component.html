@@ -1,0 +1,35 @@
+<h1>Novo Registro de Abastecimento</h1>
+<section>
+  <form [formGroup]="formulario">
+    <label>Posto de Gasolina</label>
+    <input type="text" formControlName="postoGasolina" placeholder="Digite o posto de gasolina">
+    <div class="mensagem__erro" *ngIf="formulario.get('postoGasolina')?.errors && formulario.get('postoGasolina')?.touched">Posto de Gasolina é obrigatório!</div>
+    <br /> <br />
+    <label>Quilometragem/KM</label>
+    <input type="text" formControlName="quilometragem">
+    <div class="mensagem__erro" *ngIf="formulario.get('quilometragem')?.errors?.['required'] && formulario.get('quilometragem')?.touched">Quilometragem/km é obrigatoria!</div>
+    <div class="mensagem__erro" *ngIf="formulario.get('quilometragem')?.errors?.['minlength'] && formulario.get('quilometragem')?.touched">Quilometragem/km  precisa ter no minimo 1 caracteres!</div>
+    <br /> <br />
+    <label>Litros Abastecidos/lts</label>
+    <input type="text" formControlName="litrosAbastecidos">
+    <div class="mensagem__erro" *ngIf="formulario.get('litrosAbastecidos')?.errors && formulario.get('litrosAbastecidos')?.touched">Litros Abastecidos é obrigatório!</div>
+    <div class="mensagem__erro" *ngIf="formulario.get('litrosAbastecidos')?.errors?.['minlength'] && formulario.get('litrosAbastecidos')?.touched">Litros Abastecidos precisa ter no minimo 1 caracteres!</div>
+    <br /> <br />
+    <p>Já Abasteceu neste posto?</p>
+      <input type="radio" id="sim" formControlName="jaAbasteceuNestePosto" value="true">
+      <label for="sim">Sim</label>
+      <input type="radio" id="nao" formControlName="jaAbasteceuNestePosto" value="false">
+      <label for="nao">Não</label>
+    <br /><br />
+    <label for="trocouCombustivel"> Trocou de Combustivel?</label>
+    <input type="checkbox" formControlName="trocouCombustivel" value="true">
+    <label for="tipoCombustivel">Tipo de Combustivel</label>
+    <select formControlName="tipoCombustivel" id="cars">
+      <option value="Gasolina">Gasolina</option>
+      <option value="Alcool">Alcool</option>
+    </select>
+    <br /><br />
+    <button type="button" (click)="criarRegistroAbastecimento()" [disabled]="!formulario.valid">Salvar</button>
+    <button type="button">Cancelar</button>
+  </form>
+</section>
