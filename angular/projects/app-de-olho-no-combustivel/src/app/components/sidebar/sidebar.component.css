@@ -15,12 +15,14 @@ mat-sidenav {
   margin-left: 32px;
 
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
 
   font-size: 2rem;
   color: lightgray;
+  padding: 30px;
 }
+
 
 mat-sidenav-container {
   height: calc(100vh - 65px);

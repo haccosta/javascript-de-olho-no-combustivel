@@ -1,12 +1,14 @@
 <mat-sidenav-container>
   <mat-sidenav class="mat-elevation-z8" mode="side" [opened]="opened">
-    <button type="button" mat-button class="menu-button" routerLink="formRegister/operation/Cadastrar">
+    <button type="button" mat-button class="menu-button" routerLink="/criarAbastecimento">
       <mat-icon>add list</mat-icon>
       <span>Cadastrar</span>
     </button>
 
   </mat-sidenav>
   <mat-sidenav-content>
-    <div><router-outlet></router-outlet></div>
+    <div class="content mat-elevation-z8">
+      <router-outlet></router-outlet>
+    </div>
   </mat-sidenav-content>
 </mat-sidenav-container>
