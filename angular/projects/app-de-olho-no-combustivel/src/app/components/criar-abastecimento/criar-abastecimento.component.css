@@ -1,0 +1,8 @@
+input {
+  width: 100%;
+}
+
+.mensagem__erro{
+  font-size: large;
+  color: crimson;
+}
