@@ -34,21 +34,26 @@ export class CriarAbastecimentoComponent {
         '',
         Validators.compose([Validators.required, Validators.minLength(1)]),
       ],
-      jaAbasteceuNessePosto: [false],
+      jaAbasteceuNestePosto: [false],
       trocouCombustivel: [false],
-      tipoCombustivel: [],
+      tipoCombustivel: ['Gasolina'],
     });
-
   }
 
   criarRegistroAbastecimento() {
     if (this.formulario.valid) {
-      this.service.saveData(
-        new Date().toLocaleTimeString(),
-        this.formulario.value
-      );
-      alert('Cadastrado com Sucesso !');
-      this.router.navigate(['/listarRegistroAbastecimento']);
+      this.service
+        .criar(this.formulario.value)
+        .then(() => {
+          alert('Cadastrado com Sucesso !');
+          this.router.navigate(['/listarRegistroAbastecimento']);
+        })
+        .catch((error) => {
+          console.log(
+            'Problemas com o funcionamento da Promisse ' + JSON.stringify(error)
+          );
+        });
     }
   }
+
 }

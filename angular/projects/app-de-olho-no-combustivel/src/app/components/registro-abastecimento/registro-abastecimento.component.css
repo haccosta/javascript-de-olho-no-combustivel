@@ -1,1 +1,8 @@
-:host { display: table-row; }
+#botoes {
+  margin: 10px;
+  padding: 10px;
+}
+
+#botoes button {
+  margin-left: 10px;
+}

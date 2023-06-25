@@ -41,3 +41,13 @@
   font-weight: bold;
   color: #D9D9D9;
 }
+
+.table-line {
+  display: contents;
+}
+
+h1{
+  color: #000;
+  font-size: 34px;
+  margin: 40px 0;
+}

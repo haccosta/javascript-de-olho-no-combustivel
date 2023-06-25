@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { RegistroAbastecimento } from '../registroDeAbastecimento';
 
 @Component({
   selector: '[app-table-row]',
@@ -6,13 +7,13 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./registro-abastecimento.component.css'],
 })
 export class RegistroAbastecimentoComponent {
-  @Input() registroAbastecimento = {
-    id: 1,
-    postoGasolina: 'Posto Gasolina 1',
-    quilometragem: 6000,
-    litros: 12.5,
-    trocouCombustivel: true,
-    combustivel: 'Gasolina',
-    jaAbasteceuNestePosto: true
+  @Input() registroAbastecimento : RegistroAbastecimento = {
+    id: 0,
+    postoGasolina: '',
+    quilometragem: 0,
+    litrosAbastecidos: 0,
+    trocouCombustivel: false,
+    tipoCombustivel: '',
+    jaAbasteceuNestePosto: false
   };
 }
