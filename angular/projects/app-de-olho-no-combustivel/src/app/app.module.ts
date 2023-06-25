@@ -1,6 +1,7 @@
 import { MatSelectModule } from '@angular/material/select';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from "@angular/common/http";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,6 +22,8 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import { CriarAbastecimentoComponent } from './components/criar-abastecimento/criar-abastecimento.component';
 import { ListarAbastecimentoComponent } from './components/listar-abastecimento/listar-abastecimento.component';
 import { RegistroAbastecimentoComponent } from './components/registro-abastecimento/registro-abastecimento.component';
+import { ExcluirAbastecimentoComponent } from './components/excluir-abastecimento/excluir-abastecimento.component';
+import { EditarAbastecimentoComponent } from './components/editar-abastecimento/editar-abastecimento.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +32,9 @@ import { RegistroAbastecimentoComponent } from './components/registro-abastecime
     SidebarComponent,
     CriarAbastecimentoComponent,
     ListarAbastecimentoComponent,
-    RegistroAbastecimentoComponent
+    RegistroAbastecimentoComponent,
+    ExcluirAbastecimentoComponent,
+    EditarAbastecimentoComponent
   ],
   imports: [
     BrowserModule,
@@ -49,7 +54,8 @@ import { RegistroAbastecimentoComponent } from './components/registro-abastecime
     MatSelectModule,
     MatRadioModule,
     MatCheckboxModule,
-    MatTableModule
+    MatTableModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

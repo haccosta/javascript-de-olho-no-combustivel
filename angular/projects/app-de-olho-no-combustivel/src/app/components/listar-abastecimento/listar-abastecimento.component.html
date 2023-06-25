@@ -3,16 +3,17 @@
 <table class="styled-table">
   <thead>
       <tr>
+          <th>#</th>
           <th>Posto de Gasolina</th>
           <th>KM</th>
           <th>Litros Abastecidos/lts</th>
           <th>Trocou de Combustivel?</th>
           <th>Combustivel</th>
           <th>Já Abasteceu neste Posto?</th>
-          <th>Ações</th>
+          <th></th>
       </tr>
   </thead>
-  <tbody *ngFor="let registroAbastecimento of listaAbastecimento">
-    <tr app-table-row></tr>
+  <tbody >
+    <tr *ngFor="let item of listaAbastecimento" app-table-row [registroAbastecimento]="item"></tr>
   </tbody>
 </table>

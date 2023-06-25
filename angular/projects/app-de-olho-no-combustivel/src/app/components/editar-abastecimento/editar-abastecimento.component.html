@@ -1,6 +1,6 @@
-<h1>Novo Registro de Abastecimento</h1>
+<h1>Alterar Registro de Abastecimento</h1>
 <section>
-  <form [formGroup]="formulario">
+  <form [formGroup]="formulario" *ngIf="formulario">
     <label>Posto de Gasolina</label>
     <input type="text" formControlName="postoGasolina" placeholder="Informe o posto de gasolina">
     <div class="mensagem__erro"
@@ -32,7 +32,7 @@
       <label for="nao">Não</label>
     <br /><br />
     <label for="trocouCombustivel" class="label_checkbox"> Trocou de Combus.?
-        <input type="checkbox" formControlName="trocouCombustivel">
+        <input type="checkbox" formControlName="trocouCombustivel" [(ngModel)]="formulario.value.trocouCombustivel">
     </label>
 
     <label for="tipoCombustivel">Tipo de Combustivel: </label>
@@ -42,8 +42,8 @@
     </select>
     <br /><br />
     <div class="acoes">
-      <button type="button" (click)="criarRegistroAbastecimento()" [disabled]="!formulario.valid">Salvar</button>
-      <button type="button">Cancelar</button>
+      <button type="button" (click)="editarRegistroAbastecimento()" [disabled]="!formulario.valid">Salvar</button>
+      <button type="button" (click)="cancelar()">Cancelar</button>
     </div>
   </form>
 </section>

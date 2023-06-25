@@ -1,7 +1,17 @@
-  <td>{{registroAbastecimento.postoGasolina}}</td>
-  <td>{{registroAbastecimento.quilometragem}}</td>
-  <td>{{registroAbastecimento.litros}}</td>
-  <td>{{registroAbastecimento.trocouCombustivel}}</td>
-  <td>{{registroAbastecimento.combustivel}}</td>
-  <td>{{registroAbastecimento.jaAbasteceuNestePosto}}</td>
-  <td>X | X</td>
+<th>{{registroAbastecimento.id}}</th>
+<td>{{registroAbastecimento.postoGasolina}}</td>
+<td>{{registroAbastecimento.quilometragem | number : '1.0-1'}}</td>
+<td>{{registroAbastecimento.litrosAbastecidos | number : '1.0-2'}}</td>
+<td>{{registroAbastecimento.trocouCombustivel ? "Sim" : "Não"}}</td>
+<td>{{registroAbastecimento.tipoCombustivel}}</td>
+<td>{{registroAbastecimento.jaAbasteceuNestePosto ? "Sim" : "Não"}}</td>
+<td>
+    <div id="botoes">
+      <button routerLink="/abastecimentos/editarAbastecimento/{{ registroAbastecimento.id}}">Alterar</button>
+      <button routerLink="/abastecimentos/excluirAbastecimento/{{ registroAbastecimento.id}}">Excluir</button>
+  </div>
+
+</td>
+
+
+

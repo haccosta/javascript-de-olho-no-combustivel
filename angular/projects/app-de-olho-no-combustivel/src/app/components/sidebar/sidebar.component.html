@@ -1,8 +1,13 @@
 <mat-sidenav-container>
   <mat-sidenav class="mat-elevation-z8" mode="side" [opened]="opened">
-    <button type="button" mat-button class="menu-button" routerLink="/criarAbastecimento">
+    <button type="button" mat-button class="menu-button" routerLink="/criarAbastecimento" *ngIf="exibirBotaoCadastrar()">
       <mat-icon>add list</mat-icon>
       <span>Cadastrar</span>
+    </button>
+
+    <button type="button" mat-button class="menu-button" routerLink="/listarRegistroAbastecimento" *ngIf="exibirBotaoVoltar()">
+      <mat-icon>assignment return</mat-icon>
+      <span>Voltar</span>
     </button>
 
   </mat-sidenav>

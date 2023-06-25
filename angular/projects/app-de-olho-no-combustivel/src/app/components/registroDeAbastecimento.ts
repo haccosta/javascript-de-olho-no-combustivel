@@ -2,8 +2,8 @@ export interface RegistroAbastecimento {
   id?: number;
   postoGasolina: string;
   quilometragem: number;
-  litros: number;
+  litrosAbastecidos: number;
   trocouCombustivel: boolean;
-  combustivel: string;
-  jaAbasteceuNestePosto: string;
+  tipoCombustivel: string;
+  jaAbasteceuNestePosto: boolean;
 }
