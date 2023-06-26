@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from "@angular/common/http";
 import { RegistroAbastecimento } from './registroDeAbastecimento';
-import { firstValueFrom } from 'rxjs';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -14,28 +14,28 @@ export class RegistroDeAbastecimentoService {
   (
     private http : HttpClient
   ) {}
-  listar(): Promise<RegistroAbastecimento[]> {
-    const result =  firstValueFrom(this.http.get<RegistroAbastecimento[]>(this.API));
+  listar(): Observable<RegistroAbastecimento[]> {
+    const result =  this.http.get<RegistroAbastecimento[]>(this.API);
     console.log(result)
     return result;
   }
 
-  criar(registroAbastecimento: RegistroAbastecimento): Promise<RegistroAbastecimento> {
-    return firstValueFrom(this.http.post<RegistroAbastecimento>(this.API, registroAbastecimento));
+  criar(registroAbastecimento: RegistroAbastecimento): Observable<RegistroAbastecimento> {
+    return this.http.post<RegistroAbastecimento>(this.API, registroAbastecimento);
   }
 
-  editar(registroAbastecimento: RegistroAbastecimento): Promise<RegistroAbastecimento> {
+  editar(registroAbastecimento: RegistroAbastecimento): Observable<RegistroAbastecimento> {
     const url = `${this.API}/${registroAbastecimento.id}`;
-    return firstValueFrom(this.http.put<RegistroAbastecimento>(url, registroAbastecimento));
+    return this.http.put<RegistroAbastecimento>(url, registroAbastecimento);
   }
 
-  excluir(id: number): Promise<RegistroAbastecimento> {
+  excluir(id: number): Observable<RegistroAbastecimento> {
     const url = `${this.API}/${id}`;
-    return firstValueFrom(this.http.delete<RegistroAbastecimento>(url));
+    return this.http.delete<RegistroAbastecimento>(url);
   }
 
-  buscarPorId(id: number): Promise<RegistroAbastecimento> {
+  buscarPorId(id: number): Observable<RegistroAbastecimento> {
     const url = `${this.API}/${id}`;
-    return firstValueFrom(this.http.get<RegistroAbastecimento>(url));
+    return this.http.get<RegistroAbastecimento>(url);
   }
 }
