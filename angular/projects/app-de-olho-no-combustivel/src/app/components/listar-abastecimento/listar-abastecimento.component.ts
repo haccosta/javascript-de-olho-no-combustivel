@@ -21,13 +21,8 @@ export class ListarAbastecimentoComponent implements OnInit {
   ngOnInit(): void {
     this.service
       .listar()
-      .then((data) => {
+      .subscribe((data) => {
         this.listaAbastecimento = data;
-      })
-      .catch((error) => {
-        console.log(
-          'Problemas com o funcionamento da Promisse ' + JSON.stringify(error)
-        );
       });
   }
 }

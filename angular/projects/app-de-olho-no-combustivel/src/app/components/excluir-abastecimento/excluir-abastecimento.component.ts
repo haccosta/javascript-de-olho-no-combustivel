@@ -27,30 +27,16 @@ export class ExcluirAbastecimentoComponent implements OnInit {
 
   ngOnInit(): void {
     const id = this.route.snapshot.paramMap.get('id');
-    this.service
-      .buscarPorId(parseInt(id!))
-      .then((data) => {
-        this.registroAbastecimento = data;
-      })
-      .catch((error) => {
-        console.log(
-          'Problemas com o funcionamento da Promisse ' + JSON.stringify(error)
-        );
-      });
+    this.service.buscarPorId(parseInt(id!)).subscribe((data) => {
+      this.registroAbastecimento = data;
+    });
   }
 
   excluirRegistroAbastecimento() {
     if (this.registroAbastecimento.id) {
-      this.service
-        .excluir(this.registroAbastecimento.id)
-        .then(() => {
-          this.router.navigate(['listarRegistroAbastecimento']);
-        })
-        .catch((error) => {
-          console.log(
-            'Problemas com o funcionamento da Promisse ' + JSON.stringify(error)
-          );
-        });
+      this.service.excluir(this.registroAbastecimento.id).subscribe(() => {
+        this.router.navigate(['listarRegistroAbastecimento']);
+      });
     }
   }
 
