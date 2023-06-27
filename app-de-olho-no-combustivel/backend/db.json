@@ -1,0 +1,49 @@
+{
+  "abastecimentos": [
+    {
+      "postoGasolina": "hfsghs",
+      "quilometragem": "12",
+      "litrosAbastecidos": "12",
+      "jaAbasteceuNestePosto": true,
+      "trocouCombustivel": true,
+      "tipoCombustivel": "Gasolina",
+      "id": 4
+    },
+    {
+      "postoGasolina": "fghdfg",
+      "quilometragem": "12",
+      "litrosAbastecidos": "12",
+      "jaAbasteceuNestePosto": true,
+      "trocouCombustivel": true,
+      "tipoCombustivel": "Gasolina",
+      "id": 5
+    },
+    {
+      "postoGasolina": "teste",
+      "quilometragem": "11",
+      "litrosAbastecidos": "11",
+      "jaAbasteceuNestePosto": "false",
+      "trocouCombustivel": false,
+      "tipoCombustivel": "Alcool",
+      "id": 6
+    },
+    {
+      "id": 7,
+      "postoGasolina": "teste 3",
+      "quilometragem": "3",
+      "litrosAbastecidos": "3.5",
+      "jaAbasteceuNestePosto": "false",
+      "trocouCombustivel": false,
+      "tipoCombustivel": "Gasolina"
+    },
+    {
+      "postoGasolina": "teste",
+      "quilometragem": "2500",
+      "litrosAbastecidos": "23.56",
+      "jaAbasteceuNestePosto": "false",
+      "trocouCombustivel": false,
+      "tipoCombustivel": "Gasolina",
+      "id": 8
+    }
+  ]
+}
