@@ -31,8 +31,8 @@ Projeto das interfaces gráficas foi desenvolvido na ferramenat Figma, navegáve
 Para que o projeto seja executado localmente, algumas configurações serão necessárias. No diretório principal do projeto, temos uma pasta, denonimada backend, que tem como objetivo simular as interações com uma API JSON, através da ferramenta JSON Server. A pasta /backend, trata-se um projeto Node.js, configurado para o funcionamento do JSON Server. A seguir estão listadas as ações necessárias para este funcionamento.
 
 1. Acessar a pastar backend, que se encontrar em **app-de-oho-no-combustivel/backend**;
-2. Instalar a depêndencia do Json Server: `code` npm install json-server `code` na pasta **app-de-oho-no-combustivel/backend**;
-3. Inicializar o servidor do Json Server `code` npm start `code` **na pasta app-de-oho-no-combustivel/backend**;
+2. Instalar a depêndencia do Json Server: <code> npm install json-server </code> na pasta **app-de-oho-no-combustivel/backend**;
+3. Inicializar o servidor do Json Server <code> npm start </ode> **na pasta app-de-oho-no-combustivel/backend**;
 
 
 
