@@ -32,7 +32,7 @@ Para que o projeto seja executado localmente, algumas configurações serão nec
 
 1. Acessar a pastar backend, que se encontrar em **app-de-oho-no-combustivel/backend**;
 2. Instalar a depêndencia do Json Server: <code> npm install json-server </code> na pasta **app-de-oho-no-combustivel/backend**;
-3. Inicializar o servidor do Json Server <code> npm start </ode> **na pasta app-de-oho-no-combustivel/backend**;
+3. Inicializar o servidor do Json Server <code> npm start </code>  **na pasta app-de-oho-no-combustivel/backend**;
 
 
 
