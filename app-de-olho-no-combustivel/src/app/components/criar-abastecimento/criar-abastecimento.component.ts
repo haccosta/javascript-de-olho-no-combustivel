@@ -48,4 +48,8 @@ export class CriarAbastecimentoComponent {
       });
     }
   }
+
+  cancelar() {
+    this.router.navigate(['/listarRegistroAbastecimento']);
+  }
 }

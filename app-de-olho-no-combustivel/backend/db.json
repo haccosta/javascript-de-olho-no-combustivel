@@ -1,0 +1,13 @@
+{
+  "abastecimentos": [
+    {
+      "postoGasolina": "posto 1",
+      "quilometragem": "12",
+      "litrosAbastecidos": "12",
+      "jaAbasteceuNestePosto": "true",
+      "trocouCombustivel": true,
+      "tipoCombustivel": "Gasolina",
+      "id": 1
+    }
+  ]
+}

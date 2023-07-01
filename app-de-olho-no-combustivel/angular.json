@@ -6,27 +6,27 @@
     "app-de-olho-no-combustivel": {
       "projectType": "application",
       "schematics": {},
-      "root": "projects/app-de-olho-no-combustivel",
-      "sourceRoot": "projects/app-de-olho-no-combustivel/src",
+      "root": "",
+      "sourceRoot": "src",
       "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "dist/app-de-olho-no-combustivel",
-            "index": "projects/app-de-olho-no-combustivel/src/index.html",
-            "main": "projects/app-de-olho-no-combustivel/src/main.ts",
+            "index": "src/index.html",
+            "main": "src/main.ts",
             "polyfills": [
               "zone.js"
             ],
-            "tsConfig": "projects/app-de-olho-no-combustivel/tsconfig.app.json",
+            "tsConfig": "tsconfig.app.json",
             "assets": [
-              "projects/app-de-olho-no-combustivel/src/favicon.ico",
-              "projects/app-de-olho-no-combustivel/src/assets"
+              "src/favicon.ico",
+              "src/assets"
             ],
             "styles": [
               "@angular/material/prebuilt-themes/indigo-pink.css",
-              "projects/app-de-olho-no-combustivel/src/styles.css"
+              "src/styles.css"
             ],
             "scripts": []
           },
@@ -35,8 +35,8 @@
               "budgets": [
                 {
                   "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
+                  "maximumWarning": "4mb",
+                  "maximumError": "5mb"
                 },
                 {
                   "type": "anyComponentStyle",
@@ -82,14 +82,14 @@
               "zone.js",
               "zone.js/testing"
             ],
-            "tsConfig": "projects/app-de-olho-no-combustivel/tsconfig.spec.json",
+            "tsConfig": "tsconfig.spec.json",
             "assets": [
-              "projects/app-de-olho-no-combustivel/src/favicon.ico",
-              "projects/app-de-olho-no-combustivel/src/assets"
+              "src/favicon.ico",
+              "src/assets"
             ],
             "styles": [
               "@angular/material/prebuilt-themes/indigo-pink.css",
-              "projects/app-de-olho-no-combustivel/src/styles.css"
+              "src/styles.css"
             ],
             "scripts": []
           }
@@ -98,6 +98,6 @@
     }
   },
   "cli": {
-    "analytics": "b87a381f-dac4-44d5-91e3-6ba377a7631a"
+    "analytics": "37449c75-7017-4a51-b165-540c1d344009"
   }
 }
