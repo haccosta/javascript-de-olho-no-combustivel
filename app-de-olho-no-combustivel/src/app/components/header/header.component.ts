@@ -7,6 +7,4 @@ import { Component, Input } from '@angular/core';
 })
 export class HeaderComponent {
   title =  "De Olho no Combustivel"
-  @Input() welcomeText = '';
-
 }
