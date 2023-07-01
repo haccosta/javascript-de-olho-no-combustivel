@@ -22,7 +22,7 @@ Repositorio para o projeto da disciplina de Framework Web da Especialização Te
 - [x] Build e deploy da aplicação.
 
 
-Protótipo das telas do Sistema:
+# Protótipo das telas do Sistema:
 Projeto das interfaces gráficas foi desenvolvido na ferramenat Figma, navegável, dispnonibilizado aqui: [Prototipação da Telas](https://www.figma.com/proto/RDAtre2QIB9eHpWgnHI12H/Figma-basics?type=design&node-id=101-78&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=101%3A78&show-proto-sidebar=1)
 
 
